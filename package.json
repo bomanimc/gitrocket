@@ -1,10 +1,11 @@
 {
   "name": "gitrocket",
   "version": "1.0.0",
-  "description": "",
+  "description": "A rocket ship that launches in your Hyper terminal when you push code with Git.",
   "main": "dist/index.js",
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "dist/index.js.map"
   ],
   "scripts": {
     "build": "webpack -p",
@@ -12,8 +13,25 @@
     "lint": "eslint --ext .jsx --ext .js src/ --ignore-path .gitignore; exit 0",
     "fix": "eslint --ext .jsx --ext .js src/ --ignore-path .gitignore --fix; exit 0"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Bomani McClendon",
+    "email": "bomanimc@gmail.com"
+  },
+  "license": "MIT",
+  "keyword": [
+    "hyper",
+    "hyper.app",
+    "hyperapp",
+    "hyperterm",
+    "terminal",
+    "rocket",
+    "ship",
+    "animation"
+  ],
+  "repository": "bomanimc/gitrocket",
+  "bugs": {
+    "url": "https://github.com/bomanimc/gitrocket/issues"
+  },
   "dependencies": {
     "path": "^0.12.7",
     "prop-types": "^15.5.10",
