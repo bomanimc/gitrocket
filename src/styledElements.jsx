@@ -1,11 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 
 export const launch = keyframes`
-  0%   { top: 110%; display: block; }
-  100% { top: -10%; display: block; }
+  0%   { top: calc(100% + 100px); display: block; }
+  100% { top: -100px; display: block; }
 `;
 
-// Markup and CSS for this section is adapted from Kevin Boudot's Pen at
+// Markup and styling for this section is adapted from Kevin Boudot's Pen at
 // https://codepen.io/kevinboudot/pen/EaQeNL
 export const wiggling = keyframes`
   0% {
@@ -52,9 +52,9 @@ export const Rocket = styled.div`
   display: ${props => (props.display ? 'block' : 'none')};
   position: absolute;
   left: calc(100% - 60px);
-  top: 110%;
+  top: calc(100% + 100px);
   transform: rotate(-90deg);
-  animation: ${launch} 5s cubic-bezier(.81,.13,.89,.6);
+  animation: ${launch} 4s cubic-bezier(.81,.13,.89,.6);
 `;
 
 export const RocketSpan = styled.i`

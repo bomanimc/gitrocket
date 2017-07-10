@@ -79,6 +79,8 @@ exports.decorateTerm = (Term, { React }) => {
 
     render() {
       return (
+        // Markup and styling for this section is adapted from Kevin Boudot's
+        // Pen at https://codepen.io/kevinboudot/pen/EaQeNL
         <Rocket id="rocket" display={this.state.display}>
           <RocketSpan>
             <FinTop />
