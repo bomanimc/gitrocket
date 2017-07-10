@@ -4,7 +4,7 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
     target: 'node',
-    entry: path.join(__dirname, 'src', 'rocket.js'),
+    entry: path.join(__dirname, 'src', 'rocket.jsx'),
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'index.js',
