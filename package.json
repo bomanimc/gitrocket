@@ -35,6 +35,7 @@
   "dependencies": {
     "path": "^0.12.7",
     "prop-types": "^15.5.10",
+    "react": "^15.6.1",
     "styled-components": "^2.1.1",
     "webpack": "^2.2.0",
     "webpack-node-externals": "^1.6.0"
