@@ -2,7 +2,7 @@
 A fun plugin for the [Hyper](https://hyper.is/) terminal that launches a rocket
 ship when you push code with Git.
 
-![gitrocker usage GIF](https://user-images.githubusercontent.com/6589909/28004019-64163b4a-6507-11e7-832e-c95a4bd71c2b.gif)
+![gitrocker usage GIF](https://user-images.githubusercontent.com/6589909/28026422-9dc92218-655b-11e7-8852-3ee8d57c87d5.gif)
 
 ### Installation
 To use this plugin, first install the plugin in your `~/.hyper_plugins`
