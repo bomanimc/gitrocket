@@ -1,6 +1,6 @@
 {
   "name": "gitrocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A rocket ship that launches in your Hyper terminal when you push code with Git.",
   "main": "dist/index.js",
   "files": [
