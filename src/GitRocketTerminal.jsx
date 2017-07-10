@@ -9,7 +9,6 @@ import { Rocket, RocketSpan, FinTop, FinBottom, Fire, Wastes } from './styledEle
 function detectPushCommand(data) {
   const patterns = [
     'To *.git',
-    'zsh: command not found: wow',
   ];
   return new RegExp(`(${patterns.join(')|(')})`).test(data);
 }
