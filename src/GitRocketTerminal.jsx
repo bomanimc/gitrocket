@@ -8,7 +8,7 @@ import { Rocket, RocketSpan, FinTop, FinBottom, Fire, Wastes } from './styledEle
 // at the command line. Currently it supports output from bash, zsh, fish, cmd and powershell.
 function detectPushCommand(data) {
   const patterns = [
-    'To *.git',
+    'To(.+)\.git',
   ];
   return new RegExp(`(${patterns.join(')|(')})`).test(data);
 }
