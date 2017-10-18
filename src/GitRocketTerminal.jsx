@@ -10,7 +10,6 @@ function detectPushCommand(data) {
   const patterns = [
     'To(.+)\.git', 'error:'
   ];
-
   return new RegExp(`(${patterns.join(')|(')})`).test(data) && !new RegExp(patterns[1]).test(data);
 }
 
