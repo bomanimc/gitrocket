@@ -7,10 +7,9 @@ import { Rocket, RocketSpan, FinTop, FinBottom, Fire, Wastes } from './styledEle
 // This function performs regex matching on expected shell output for git push result being input
 // at the command line. Currently it supports output from bash, zsh, fish, cmd and powershell.
 function detectPushCommand(data) {
-  const patterns = [
-    'To(.+)\.git', 'error:'
-  ];
-  return new RegExp(`(${patterns.join(')|(')})`).test(data) && !new RegExp(patterns[1]).test(data);
+  const patterns = ['To(.+)\.git'];
+  const antiPatterns = ['error:'];
+  return new RegExp(`(${patterns.join(')|(')})`).test(data) && !new RegExp(`(${antiPatterns.join(')|(')})`).test(data);
 }
 
 exports.middleware = store => next => (action) => {
