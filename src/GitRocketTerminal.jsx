@@ -15,7 +15,8 @@ function detectPushCommand(data) {
 exports.middleware = store => next => (action) => {
   if (action.type === 'SESSION_ADD_DATA') {
     const { data } = action;
-    if (detectPushCommand(data)) {
+    // The data length check verifies it is a push, not a duplicate output of the console
+    if (detectPushCommand(data) && data.length < 1000) {
       store.dispatch({
         type: 'PUSH_MODE_TOGGLE',
       });
